@@ -1,0 +1,44 @@
+ .header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    font-size: 24px;
+    color: #FF6060;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+a {
+    text-decoration: none;
+    color: #FF6060;
+    text-align: center;
+}
+
+
+@media (max-width:1024px ) { 
+    .header {
+        font-size: 18px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header-logo {
+        width: 25vw;
+    }
+    
+ }
+
+ @media (max-width:600px ) { 
+    .header {
+        font-size: 18px;
+        grid-template-columns: 1fr 2fr;
+    }
+    .header-logo {
+        width: 20vw;
+    }
+ }
+ 
+
+

@@ -1,0 +1,22 @@
+.error {
+    color:#FF6060;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25vh 35vh 15vh;
+}
+
+.error-404 {
+    text-align: center;
+    font-size: 150px;
+    font-weight: 1000;
+}
+
+.error-message {
+    text-align: center;
+    font-size: 24px;
+}
+
+.error-backHome {
+    text-align: center;
+    text-decoration-line: underline;
+}
