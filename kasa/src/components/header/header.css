@@ -3,7 +3,6 @@
     grid-template-columns: 3fr 1fr;
     align-items: center;
     font-size: 24px;
-    color: #FF6060;
 }
 
 .header-nav {
@@ -11,10 +10,14 @@
     grid-template-columns: repeat(2,1fr);
 }
 
-a {
+ a {
     text-decoration: none;
-    color: #FF6060;
+    color: var(--color-text-primary);
     text-align: center;
+} 
+
+.header-nav-underline {
+    text-decoration: underline;
 }
 
 

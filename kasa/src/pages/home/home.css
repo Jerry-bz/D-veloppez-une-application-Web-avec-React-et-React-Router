@@ -1,0 +1,29 @@
+.home-banner {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: grid;
+}
+
+.home-banner-title {
+    grid-row-start:2 ;
+    grid-column-start: 1 ;
+    z-index: 10;
+    align-self: center;
+    margin: auto;
+    color: var(--color-text-secondary);
+    font-size: 24px;
+}
+
+.home-banner-img {
+    grid-column-start: 1 ;
+    grid-row-start:2;
+    width: 100%;
+    filter: brightness(65%);
+    border-radius: 25px;
+}
+
+@media (max-width : 768px) {
+    .home-banner-title {
+        font-size: 16px;
+    }
+}
