@@ -1,6 +1,14 @@
 import React from 'react'
 import './error.css'
 import { Link } from 'react-router-dom'
+
+
+
+/**
+ * Affiche la page Erreur si le chemin de l'url est incorrect
+ * @component - Error
+ */
+
 export default function Error() {
   return (
     <main>

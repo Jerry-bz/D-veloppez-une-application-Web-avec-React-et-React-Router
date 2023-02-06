@@ -3,6 +3,11 @@ import { NavLink } from 'react-router-dom'
 import logoRed from '../../assets/logo/logo_kasa_red.svg'
 import './header.css'
 
+/**
+ * Affiche le Header à toutes les pages
+ * Ajoute une classe CSS "underline" au bouton de navigation qui correspond à la page affichée
+ * @component - Header
+ */
 
 export default function Header() {
     return (

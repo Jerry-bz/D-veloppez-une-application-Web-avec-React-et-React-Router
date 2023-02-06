@@ -7,6 +7,10 @@ import About from './pages/about/about';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 
+/**
+ * Mise en place de la navigation de l'application
+ * @component - App
+ */
 
 export default function App() {
   return (
@@ -14,7 +18,7 @@ export default function App() {
     <Header />
     <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/housing' element={<Housing />} />
+        <Route path='/housing/:id' element={<Housing />} />
         <Route path='/about' element={<About />} />
         <Route path='*' element={<Error />} />
     </Routes>
