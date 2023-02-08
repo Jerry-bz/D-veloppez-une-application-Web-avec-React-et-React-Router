@@ -4,9 +4,13 @@ import logoArrowUp from '../../assets/logo/logo_arrowUp.svg'
 import React, { useState } from 'react';
 
 /**
- * Affiche la Collapse avec l'utilisation de hooks d'etats
+ * Affiche la Collapse 
+ * Utilisation de 2 hooks d'états [img,text] 
  * @component - Collapse
+ * @property {string} title - titre de la collapse
+ * @property {string} description - texte de la collapse
  */
+
 export default function Collapse({ title, description }) {
 
     const [img, setImage] = useState(logoArrowDown)

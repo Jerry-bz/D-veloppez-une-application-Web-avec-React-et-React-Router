@@ -15,10 +15,10 @@ import './banner.css'
         {title ?
     
           <section className='home-banner'>
-              <p className='home-banner-title'>
+              <div className='home-banner-title'>
                 <div>Chez vous,</div>
                 <div>partout et ailleurs</div>
-              </p> 
+              </div> 
               <img className='home-banner-img' src={img} alt="banner"></img>
             </section> :
          
