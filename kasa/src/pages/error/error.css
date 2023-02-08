@@ -2,7 +2,7 @@
     color:var(--color-text-primary);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 25vh 35vh 15vh;
+     grid-template-rows: 2fr 2fr 1fr;
 }
 
 .error-404 {
@@ -19,5 +19,4 @@
 .error-backHome {
     text-align: center;
     text-decoration-line: underline;
-    color: var(--color-text-primary);
 }

@@ -11,8 +11,6 @@
 }
 
  nav a {
-    text-decoration: none;
-    color: var(--color-text-primary);
     text-align: center;
 } 
 

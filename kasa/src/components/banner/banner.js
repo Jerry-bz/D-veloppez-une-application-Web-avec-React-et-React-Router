@@ -1,4 +1,4 @@
-import '../banner/banner.css'
+import './banner.css'
 
 /**
  * Affiche la Bannière dans la page Home et A propos
@@ -9,25 +9,29 @@ import '../banner/banner.css'
 
  export default function Banner({title,img}) {
     return (
-      <main>
+
+        <>
 
         {title ?
-          
+    
           <section className='home-banner'>
-            <p className='home-banner-title'>
-              <div>Chez vous,</div>
-              <div>partout et ailleurs</div>
-            </p> 
-            <img className='home-banner-img' src={img} alt="banner-home"></img>
-          </section> :
+              <p className='home-banner-title'>
+                <div>Chez vous,</div>
+                <div>partout et ailleurs</div>
+              </p> 
+              <img className='home-banner-img' src={img} alt="banner"></img>
+            </section> :
          
-          <section className='about-banner'>
-            <img className='about-banner-img' src={img} alt="banner-home"></img>
-          </section>
+            <section className='about-banner'>
+              <img className='about-banner-img' src={img} alt="banner"></img>
+            </section>
 
         }
 
-      </main>
+        </>
+
+
+      
     )
   }
    

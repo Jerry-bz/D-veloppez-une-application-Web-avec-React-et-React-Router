@@ -1,0 +1,27 @@
+.collapse {
+    color:var(--color-text-secondary);
+}
+
+.collapse-container-title {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    align-items: center;
+    background-color: var(--color-text-primary);
+    padding: 0% 0% 0% 3%;
+    border-radius: 5px;
+}
+
+.collapse-logo-arrow:hover {
+    cursor: pointer;
+}
+
+.collapse-text {
+    color:var(--color-text-primary);
+    background-color: #F6F6F6;
+    padding:3% 2% ;
+}
+
+.collapse-text-none {
+    display:none;
+}
