@@ -1,5 +1,8 @@
 import React from 'react'
+// import datas from '../../data/data.json'
 import { useParams } from 'react-router-dom'
+import Slideshow from '../../components/slideshow/slideshow';
+
 
 /**
  * Affiche la page Logement
@@ -7,10 +10,10 @@ import { useParams } from 'react-router-dom'
  */
 
 export default function Housing() {
-   const {id} = useParams();
-
+  const {idHousing} = useParams();
+  
 
   return (
-    <div>Housing:{id}</div>
+    <Slideshow />
   )
 }

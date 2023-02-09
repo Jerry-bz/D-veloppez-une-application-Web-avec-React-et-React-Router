@@ -1,0 +1,29 @@
+.slideshow {
+    position: relative;
+    margin-top: 3%;
+}
+
+.slideshow-img {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    aspect-ratio: 12/4;
+}
+
+.slideshow-arrowLeft {
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    height: 10%;
+}
+
+.slideshow-arrowRight {
+    position: absolute;
+    bottom: 50%;
+    left: 90%;
+    height: 10%;
+}
+
+.slideshow-arrowLeft:hover, .slideshow-arrowRight:hover {
+    cursor: pointer;
+}
