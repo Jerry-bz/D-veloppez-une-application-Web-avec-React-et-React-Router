@@ -1,0 +1,55 @@
+
+.housing {
+    color: var(--color-text-primary);
+}
+
+.housing-description {
+   display:grid;
+   grid-template-columns: 8fr 1fr;
+   height: 4vh;
+ }
+
+ .housing-profil {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: center;
+ }
+
+
+
+ .housing-photo {
+    border-radius: 50%;
+    object-fit:cover;
+    width: 3vw;
+  }
+
+  .housing-localisation {
+    font-size: small;
+  }
+
+  .housing-informations {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+ }
+ 
+
+ .housing-tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 3%;
+    align-items: center;
+ }
+
+ .housing-tag {
+    background-color: var(--color-text-primary);
+    color: var(--color-text-secondary);
+    border-radius: 25px;
+    padding: 2% 5%;
+    text-align: center;
+ }
+ 
+ .a {
+    color: blue;
+ }
+ 
+ 

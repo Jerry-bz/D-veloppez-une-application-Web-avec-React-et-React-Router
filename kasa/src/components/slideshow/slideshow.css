@@ -8,6 +8,7 @@
     border-radius: 25px;
     object-fit: cover;
     aspect-ratio: 12/4;
+    filter: brightness(80%)
 }
 
 .slideshow-arrowLeft {
@@ -26,4 +27,11 @@
 
 .slideshow-arrowLeft:hover, .slideshow-arrowRight:hover {
     cursor: pointer;
+}
+
+.slideshow-page {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    color: var(--color-text-secondary);
 }
