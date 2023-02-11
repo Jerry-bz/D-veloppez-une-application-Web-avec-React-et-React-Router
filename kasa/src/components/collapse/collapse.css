@@ -20,6 +20,8 @@
     color:var(--color-text-primary);
     background-color: #F6F6F6;
     padding:3% 2% ;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .collapse-text-none {

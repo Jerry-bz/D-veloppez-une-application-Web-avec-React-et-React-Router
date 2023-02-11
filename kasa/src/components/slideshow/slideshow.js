@@ -6,8 +6,8 @@ import { useState } from 'react'
 export default function Slideshow({ location }) {
 
     const [index, setIndex] = useState(0)
-
-
+    
+    
     function slides(e) {
         if (e.target.classList.contains('slideshow-arrowLeft')) {
 
@@ -25,11 +25,17 @@ export default function Slideshow({ location }) {
 
 
     return (
+       location.pictures.length !== 1 ?
+
         <section className='slideshow'>
             <img className='slideshow-img' src={location.pictures[index]} alt="location" />
             <img onClick={(e) => slides(e)} className='slideshow-arrowLeft' src={logoArrowLeft} alt='' />
             <img onClick={(e) => slides(e)} className='slideshow-arrowRight' src={logoArrowRight} alt='' />
             <p className='slideshow-page'>{index + 1} / {location.pictures.length} </p>
-        </section>
+        </section> : 
+
+        <section className='slideshow'>
+         <img className='slideshow-img' src={location.pictures[index]} alt="location" />
+     </section>
     )
 }

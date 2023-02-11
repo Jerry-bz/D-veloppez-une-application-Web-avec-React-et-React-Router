@@ -6,6 +6,9 @@ import Slideshow from '../../components/slideshow/slideshow';
 import './housing.css'
 import logoStarGrey from '../../assets/logo/logo_star_grey.svg'
 import logoStarRed from '../../assets/logo/logo_star_red.svg'
+import Error from '../error/error';
+
+
 
 
 /**
@@ -13,15 +16,17 @@ import logoStarRed from '../../assets/logo/logo_star_red.svg'
  * @component - Housing
  */
 
-export default function Housing() {
+ export default function Housing () {
   const {idHousing} = useParams();
-  
   const housing = idHousing && datas.find(housing => housing.id === idHousing)
   const rating = [1,2,3,4,5]
-
  
+
+
+
   return (
-    <main className='housing'>
+    housing ? 
+     <main className='housing'>
     <Slideshow location = {housing}  />
     <div className='housing-description'>
         <h3>{housing.title}</h3>
@@ -46,5 +51,7 @@ export default function Housing() {
         <Collapse title="Equipements" description={housing.equipments} />
       </div>
     </main>
-  )
+     : <Error />
+    )
 }
+

@@ -15,7 +15,7 @@ export default function Collapse({ title, description }) {
 
     const [img, setImage] = useState(logoArrowDown)
     const [text, setText] = useState('collapse-text-none')
-
+  
     return (
         <>
             <article className="collapse">
@@ -31,7 +31,9 @@ export default function Collapse({ title, description }) {
                     <h3 className="collapse-title">{title}</h3>
                     <img className="collapse-logo-arrow" src={img} alt="logo-arrow-down"></img>
                 </div>
-                <div className={text}>{description}</div>
+                <div className={text}>{typeof(description) === "object" ? description.map((element) => {
+                   return <span key={element}>{element}</span>
+                }):description }</div>
             </article>
         </>
     )
