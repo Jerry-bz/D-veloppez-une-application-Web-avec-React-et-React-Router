@@ -13,11 +13,11 @@ import Collapse from '../../components/collapse/collapse'
 export default function About() {
   return (
     <main>
-      <Banner img={bannerAbout}/>
+      <Banner img={bannerAbout} />
       <section className="about-section">
-            {dataAbout.map(element => <Collapse key={element.id} title={element.id} description={element.description} />)}
-        </section>
-  </main>
+        {dataAbout.map(element => <Collapse key={element.id} title={element.id} description={element.description} />)}
+      </section>
+    </main>
   )
 }
 

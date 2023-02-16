@@ -12,17 +12,18 @@ import Footer from './components/footer/footer';
  * @component - App
  */
 
+
 export default function App() {
   return (
     <>
-    <Header />
-    <Routes>
+      <Header />
+      <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/housing/:idHousing' element={<Housing />} />
         <Route path='/about' element={<About />} />
         <Route path='*' element={<Error />} />
-    </Routes>
-    <Footer />
+      </Routes>
+      <Footer />
     </>
   )
 }

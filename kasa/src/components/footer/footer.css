@@ -1,27 +1,36 @@
 .footer {
     background: #000000;
-    display: grid;
-    grid-template-columns: repeat(11,1fr);
-    grid-template-rows: repeat(5,1fr);
-    margin-top: 3%;
+    height: 12vh;
+    position: relative;
+    margin-top: 3vh;
 }
 
 .footer-logo {
-    width: 6vw;
-    grid-column-start: 6;
-    grid-column-end: 10;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    width: 5vw;
+    position: absolute;
+    top: 20%;
+    left: 45%;
 }
 
 .footer-copyright {
-    width: 25vw;
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    width: 15vw;
+    position: absolute;
+    top: 65%;
+    left: 38%;
 }
 
-
+@media (max-width:768px) {
+    .footer-logo {
+        width: 15vw;
+        top: 20%;
+        left: 40%;
+    }
+    
+    .footer-copyright {
+        width: 30vw;
+        top: 65%;
+        left: 30%;
+    }
+}
 
 

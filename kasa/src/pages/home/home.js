@@ -14,12 +14,12 @@ import Card from '../../components/card/card'
 export default function Home() {
   return (
     <main>
-     <Banner img={bannerHome} title={true}/>
-     <section className='cards'>
+      <Banner img={bannerHome} title={true} />
+      <section className='cards'>
         {datas.map((data) =>
-            <Card link={'housing/' + data.id} img={data.cover} title={data.title} key={data.id}/>
+          <Card link={'housing/' + data.id} img={data.cover} title={data.title} key={data.id} />
         )}
-     </section>
+      </section>
     </main>
   )
 }

@@ -2,8 +2,9 @@
 
 
 :root {
-    --color-text-primary :  #FF6060;
-    --color-text-secondary : #FFFFFF;
+    --color-text-primary: #FF6060;
+    --color-text-secondary: #FFFFFF;
+    --box-shadow-primary: 2px 1px 2px grey;
 }
 
 
@@ -13,7 +14,10 @@ body {
 
 
 #root {
-    margin: 0% 10%;
+    min-height: 97vh;
+    padding: 0% 10%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 a {
@@ -21,6 +25,3 @@ a {
     color: var(--color-text-primary);
     cursor: pointer;
 }
-
-
-

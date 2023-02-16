@@ -1,9 +1,9 @@
 .collapse {
-    color:var(--color-text-secondary);
+    color: var(--color-text-secondary);
+    margin: 1% 0%;
 }
 
 .collapse-container-title {
-    margin-top: 1%;
     display: grid;
     grid-template-columns: 90% 10%;
     align-items: center;
@@ -17,13 +17,19 @@
 }
 
 .collapse-text {
-    color:var(--color-text-primary);
+    color: var(--color-text-primary);
     background-color: #F6F6F6;
-    padding:3% 2% ;
+    padding: 3%;
     display: grid;
     grid-template-columns: 1fr;
 }
 
 .collapse-text-none {
-    display:none;
+    display: none;
+}
+
+@media (max-width:768px) {
+    .collapse-container-title {
+        grid-template-columns: 85% 15%;
+    }
 }

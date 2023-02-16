@@ -1,22 +1,71 @@
 .error {
-    color:var(--color-text-primary);
+    color: var(--color-text-primary);
     display: grid;
     grid-template-columns: 1fr;
-     grid-template-rows: 2fr 2fr 1fr;
 }
+
 
 .error-404 {
     text-align: center;
-    font-size: 150px;
+    font-size: 100px;
     font-weight: 1000;
+    margin-top: 10%;
 }
 
 .error-message {
     text-align: center;
     font-size: 24px;
+    padding: 2% 0% 5% 0%;
 }
 
 .error-backHome {
+    margin-top: 15%;
     text-align: center;
     text-decoration-line: underline;
+}
+
+@media (max-width:1440px) {
+    .error-404 {
+        margin-top: 20%;
+    }
+
+    .error-backHome {
+        margin-top: 25%;
+    }
+}
+
+@media (max-width:1024px) {
+
+    .error-backHome {
+        margin-top: 35%;
+    }
+}
+
+@media (max-width:1024px) {
+
+    .error-backHome {
+        margin-top: 55%;
+    }
+}
+
+@media (max-width:768px) {
+
+    .error-404 {
+        margin-top: 50%;
+    }
+
+    .error-backHome {
+        margin-top: 75%;
+    }
+}
+
+@media (max-width:500px) {
+
+    .error-404 {
+        margin-top: 70%;
+    }
+
+    .error-backHome {
+        margin-top: 70%;
+    }
 }

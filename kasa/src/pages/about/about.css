@@ -1,0 +1,10 @@
+.about-section {
+    display: grid;
+    padding: 0% 5%;
+}
+
+@media (max-width:768px) {
+    .about-section {
+        padding: 0% 0%;
+    }
+}
