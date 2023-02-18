@@ -14,7 +14,7 @@ export default function Header() {
         <header className='header'>
             <img className='header-logo' src={logoRed} alt="logo Kasa"></img>
                <nav className='header-nav'>
-                    <NavLink className={() => window.location.pathname === "/" ?"header-nav-underline" : null} to='/'>Acceuil</NavLink>
+                    <NavLink className={() => window.location.pathname === "/" ?"header-nav-underline" : null} to='/'>Accueil</NavLink>
                     <NavLink className={() => window.location.pathname === "/about" ? "header-nav-underline" : null}  to='/about'>A propos</NavLink>
                </nav>
         </header>
